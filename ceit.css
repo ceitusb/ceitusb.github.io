@@ -1,0 +1,178 @@
+/*-------------------
+| palette:					|
+| orangered	#FF4500 |
+| jet black	#000000 |
+| slategray	#1D1F21 |
+| white			#FFFFFF |
+| orange		#FF8C00 |
+| lightgray	#EBEBEA |
+-------------------*/
+
+@font-face {
+    font-family: basica;
+    src: url(./Basica_V.ttf);
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+html {
+	box-sizing: border-box;
+}
+*, *:before, *:after {
+	box-sizing: inherit;
+}
+
+body{
+	margin: 0;
+	padding: 0;
+	animation: fadein 2s;
+}
+
+/*- HEADER --------------------------*/
+	header ul{
+		list-style-type: none;
+
+		display: inline-flex;
+		flex-direction: row;
+
+		margin: 0;
+		padding: 5px 0;
+		position: fixed;
+		top: 0;
+		width: 100%;
+		height: 50px;
+
+		background-color: white;
+		border-bottom: solid 1px black;
+	}
+
+	header ul li{
+		font-family: basica;
+		font-size: 40px;
+		font-weight: normal;
+
+		color: black;
+		text-align: center;
+		border: 0;
+	}
+
+	header ul li img{
+		height: 40px;
+		padding: 4px 10px;
+		vertical-align: baseline;
+	}
+
+	header ul li a i{
+		font-size: 35px;
+		color: black;
+		text-decoration: none;
+		padding: 0 10px;
+		vertical-align: middle;
+	}
+
+
+/*- SIDEBAR -------------------------*/
+	nav{
+		position: fixed;
+		width: 30%;
+		right: 0;
+	}
+
+	nav ul {
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+		background-color: white;
+		color: black;
+	}
+
+	nav ul li.active{
+		background-color: #EBEBEA;
+		color: #FF4500;
+	}
+
+	nav ul li:hover:not(.active) {
+		background-color: #FF8C00;
+		color: white;
+	}
+
+	nav ul li a{	
+		font-size: 1.25em;
+		padding: 10px;
+		display: block;
+		color: inherit;
+		text-align: center;
+		border-bottom: dashed 1px #EBEBEA;
+		text-decoration: none;
+		
+	}
+
+	nav ul li.active a{
+		font-weight: bolder;
+	}
+
+
+
+/*- CONTENT ----------------------*/
+	main { 
+		padding: 30px;
+		font-size: 1em;
+		width: 70%;
+
+		word-wrap: break-word;
+		text-align: justify;
+		left: 0;
+	}
+
+	h2 {
+		color: #FF8C00;
+		margin: 10px;
+	}
+
+	p {
+		margin: 10px;
+		text-indent: 20px;
+	}
+
+	p b {
+		color: #FF4500;
+		font-weight: normal;
+	}
+
+	main p a {
+		color: #FF4500;
+	}
+
+	main p a:visited {
+		color: #FF8C00;
+	}
+
+	main p a:hover {
+		color: #999999;
+	}
+
+	main img {
+		max-width: 100%;
+		height: auto;
+	}
+
+.content {
+	margin-top: 50px;
+	font-family: 'jura'
+}
+
+@media screen and (max-width: 500px){
+	nav {
+		width: 100%;
+		position: unset;
+	}
+
+	main {
+		width: 100%;
+		position: unset;
+	}
+}
+
