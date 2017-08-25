@@ -9,13 +9,18 @@
 -------------------*/
 
 @font-face {
-    font-family: basica;
-    src: url(./Basica_V.ttf);
+	font-family: basica;
+	src: url(./Basica_V.ttf);
 }
 
 @keyframes fadein {
-    from { opacity: 0; }
-    to   { opacity: 1; }
+	from { opacity: 0; }
+	to   { opacity: 1; }
+}
+
+@keyframes chcolor(newcolor) {
+	from { color: currentColor; }
+	to { color: newcolor; }
 }
 
 html {
@@ -28,6 +33,7 @@ html {
 body{
 	margin: 0;
 	padding: 0;
+	font-family: jura;
 	animation: fadein 2s;
 }
 
@@ -79,13 +85,13 @@ body{
 		position: fixed;
 		width: 30%;
 		right: 0;
+		background-color: white;
 	}
 
 	nav ul {
 		list-style-type: none;
 		margin: 0;
 		padding: 0;
-		background-color: white;
 		color: black;
 	}
 
@@ -121,23 +127,24 @@ body{
 		padding: 30px;
 		font-size: 1em;
 		width: 70%;
+		min-height: 524px;
 
 		word-wrap: break-word;
 		text-align: justify;
 		left: 0;
 	}
 
-	h2 {
+	main h2 {
 		color: #FF8C00;
 		margin: 10px;
 	}
 
-	p {
+	main p {
 		margin: 10px;
 		text-indent: 20px;
 	}
 
-	p b {
+	main p b {
 		color: #FF4500;
 		font-weight: normal;
 	}
@@ -164,15 +171,41 @@ body{
 	font-family: 'jura'
 }
 
-@media screen and (max-width: 500px){
+@media screen and (max-width: 600px) {
 	nav {
 		width: 100%;
 		position: unset;
+		height: unset;
+	}
+
+	nav div{
+		display: none;
 	}
 
 	main {
 		width: 100%;
 		position: unset;
+		margin: 0;
 	}
 }
+
+@media screen and (max-height: 600px) {
+	nav {
+		width: 100%;
+		position: unset;
+		height: unset;
+	}
+
+	nav div{
+		display: none;
+	}
+
+	main {
+		width: 100%;
+		position: unset;
+		margin: 0;
+	}
+}
+
+
 
