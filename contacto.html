@@ -34,10 +34,36 @@
 			</div>
 		</nav>
 		<main>
-			<div align="center"><i style="color: orange; text-align: center;" class="fa fa-exclamation-triangle"></i><code>	Este sitio esta en construcción. Disculpe las molestias.	</code><i style="color: orange" class="fa fa-exclamation-triangle"></i></p></div>
-			<br>
+			<p>Si tienes algún proyecto que plantearnos, alguna duda o sugerencias, no dudes en contactarnos a través nuestras redes sociales (<a href="https://twitter.com/ceit_usb">twitter</a> o <a href="https://www.instagram.com/ceitusb/">instagram</a>) o a nuestro e-mail, usando el siguiente form:</p>
 
-			<p>Si tienes algún proyecto que plantearnos, o alguna duda o sugerencia para mejorar nuestro trabajo, no dudes en contactarnos a través nuestras redes sociales (<a href="https://twitter.com/ceit_usb">twitter</a> o <a href="https://www.instagram.com/ceitusb/">instagram</a>) o a nuestro e-mail, usando el siguiente form:</p>
+			<form action="https://getsimpleform.com/messages?form_api_token=47ebf62252ba21bf2ce6bbaa7115c3aa" method="post">
+				<!-- the redirect_to is optional, the form will redirect to the referrer on submission -->
+				<input type='hidden' name='redirect_to' value='http://ceitusb.github.io/contacto.html' />
+				<!-- all your input fields here.... -->
+				<div class="container">
+					<div class="element" style="width:40%; margin-right: 15px">
+						<div class="group">
+							<label for="name">Nombre:</label>
+							<input type="text" name="name" required />
+						</div>
+						<div class="group">
+							<label for="email">E-mail:</label>
+							<input type="text" name="email" pattern=[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$ required />
+						</div>
+						<div class="group">
+							<label for="subject">Asunto:</label>
+							<input type="text" name="subject" required />
+						</div>
+					</div>
+					<div class="element" style="width:60%; margin-left: 15px">
+						<div class="group" style="height:100%; display: flex; flex-direction: column;">
+							<label for="message">Mensaje:</label>
+							<textarea name="message" required /></textarea>
+						</div>
+					</div>
+				</div>
+				<input type='submit' value='Enviar'>
+			</form>
 		</main>
 	</div>
 	<footer style="text-align: center; font-family: monospace; font-size: 1em; color: #999999; margin: 20px 0;">
