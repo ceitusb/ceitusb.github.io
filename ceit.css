@@ -13,6 +13,11 @@
 	src: url(./Basica_V.ttf);
 }
 
+@-webkit-keyframes fadein {
+	from { opacity: 0; }
+	to   { opacity: 1; }
+}
+
 @keyframes fadein {
 	from { opacity: 0; }
 	to   { opacity: 1; }
@@ -20,12 +25,10 @@
 
 html {
 	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 }
 *, *:before, *:after {
 	-webkit-box-sizing: inherit;
-	-moz-box-sizing: inherit;
 	box-sizing: inherit;
 }
 
@@ -39,8 +42,15 @@ body{
 	header ul{
 		list-style-type: none;
 
+		display: -webkit-inline-box;
+
+		display: -ms-inline-flexbox;
+
 		display: inline-flex;
-		flex-direction: row;
+		-webkit-box-orient: horizontal;
+		-webkit-box-direction: normal;
+		    -ms-flex-direction: row;
+		        flex-direction: row;
 
 		margin: 0;
 		padding: 5px 0;
@@ -53,36 +63,43 @@ body{
 		border-bottom: solid 1px black;
 	}
 
-	header ul li{
+	header ul li a{
 		font-family: basica;
 		font-size: 40px;
 		font-weight: normal;
-
+		text-decoration: none;
 		color: black;
 		text-align: center;
 		border: 0;
 	}
 
-	header ul li img{
+	header ul li a img{
 		height: 40px;
 		padding: 4px 10px;
 		vertical-align: baseline;
 	}
 
-	header ul li a i{
-		font-size: 35px;
+	header ul li i:not(#menuIcon){
 		color: black;
 		text-decoration: none;
 		padding: 0 10px;
 		vertical-align: middle;
 	}
 
+.wrapper {
+	font-family: 'jura';
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	height: 100vh;
+	padding-top: 50px;
+}
 
 /*- SIDEBAR -------------------------*/
 	nav{
-		position: fixed;
-		width: 30%;
-		right: 0;
+		-webkit-box-flex: 1;
+		    -ms-flex: 1 0 240px;
+		        flex: 1 0 240px;
 		background-color: white;
 	}
 
@@ -90,7 +107,7 @@ body{
 		list-style-type: none;
 		margin: 0;
 		padding: 0;
-		color: black;
+		color: #1D1F21;
 	}
 
 	nav ul li.active{
@@ -98,25 +115,29 @@ body{
 		color: #FF4500;
 	}
 
-	nav ul li:hover:not(.active) {
-		background-color: #FF8C00;
-		color: white;
-	}
-
 	nav ul li a{	
 		font-size: 1.25em;
-		padding: 10px;
+		padding: 10px 0;
 		display: block;
 		color: inherit;
-		text-align: center;
 		border-bottom: dashed 1px #EBEBEA;
-		text-decoration: none;
-		
+		text-decoration: none;	
+	}
+
+	nav ul li a i {
+		padding-left: 15px; 
+		width: 50px;
 	}
 
 	nav ul li.active a{
 		font-weight: bolder;
 	}
+
+	nav ul li:hover {
+		background-color: #FF8C00;
+		color: white;
+	}
+
 
 
 
@@ -124,13 +145,19 @@ body{
 	main { 
 		padding: 30px;
 		font-size: 1em;
-		width: 70%;
 		min-height: 524px;
-
 		word-wrap: break-word;
 		text-align: justify;
-		left: 0;
-		animation: fadein 2s;
+		-webkit-animation: fadein 2s;
+		        animation: fadein 2s;
+		overflow: auto;
+		-webkit-box-flex: 1;
+		    -ms-flex: 1 1 auto;
+		        flex: 1 1 auto;
+	}
+
+	main h1 {
+		color: #FF4500
 	}
 
 	main h2 {
@@ -141,11 +168,6 @@ body{
 	main p {
 		margin: 10px;
 		text-indent: 20px;
-	}
-
-	main p b {
-		color: #FF4500;
-		font-weight: normal;
 	}
 
 	main p a {
@@ -170,11 +192,17 @@ body{
 		margin: 5%;
 		padding: 30px;
 		border: solid 1px #999999;
+		border-radius: 2px;
+		-webkit-box-shadow: 1px 1px 1px 1px #999999;
+		        box-shadow: 1px 1px 1px 1px #999999;
 	}
 
 	main div.container {
 		width: 100%;
+		display: -webkit-inline-box;
+		display: -ms-inline-flexbox;
 		display: inline-flex;
+		text-align: left;
 	}
 
 	main div.element {
@@ -187,7 +215,9 @@ body{
 	}
 
 	main div.element textarea {
-		flex-grow: 99;
+		-webkit-box-flex: 99;
+		    -ms-flex-positive: 99;
+		        flex-grow: 99;
 		resize: none;
 	}
 
@@ -197,78 +227,144 @@ body{
 
 	input[type=submit] {
 		background-color: #FF8C00;
+		background-image: none;
 		border: none;
 		color: white;
 		font-size: 1em;
 		font-family:'jura';
 		font-weight: bold;
-		height: 50px;
 		border-radius: 2px;
-		width: 100%;
 		margin-top: 10px;
+		width: 100%;
+		height: 50px;
+	}
+
+	input[type=file] {
+		background-color: #EBEBEA;
+		border: none;
+		color: #1D1F21;
+		font-size: 1em;
+		font-family: monospace;
+		width: 100%;
 	}
 
 	input[type=text], textarea{
 		color: #1D1F21;
 		border: none;
 		border: solid 1px #EBEBEA;
-		box-shadow: none;
+		-webkit-box-shadow: none;
+		        box-shadow: none;
 		font-family:monospace;
 		font-size: 1em;
 		width: 100%;
 		padding: 5px;
+		border-radius: 2px;
+		-webkit-transition-duration: 0.5s; /* Safari */
+		-o-transition-duration: 0.5s;
+		   transition-duration: 0.5s;
 	}
 
 	input[type=text]:focus, textarea:focus {
-		border: solid 1px #EBEBEA;
-		color: #1D1F21;
-	}
+		border: solid 1px #1D1F21;
 
-	input[type=text]:invalid, textarea:invalid {
-		border-color: #FF8C00; 
 	}
 
 
-.content {
-	margin-top: 50px;
-	font-family: 'jura'
+footer {
+	width:100%;
+	text-align: center;
+	font-family: monospace;
+	font-size: 1em;
+	color: #999999;
+	padding: 20px;
+	background-color: white;
 }
 
-@media screen and (max-width: 600px) {
-	nav {
-		width: 100%;
-		position: unset;
-		height: unset;
-	}
+/*- MOBILE VERSION DROPDOWN MENU ----*/
 
-	nav div{
+	#menuButton {
+		width: 100%;
+		height: 100%;
+		padding: 0;
+		margin: 0;
+		border: none;
+		background-color: white;
+		color: black;
+		cursor: pointer;
+		font-size: 30px;
 		display: none;
 	}
 
-	main {
-		width: 100%;
-		position: unset;
-		margin: 0;
+	#menuButton:hover {
+		color: #FF4500;
 	}
-}
 
-@media screen and (max-height: 600px) {
-	nav {
-		width: 100%;
-		position: unset;
+@media (max-width: 600px) {
+	nav div {
+		display: none;
+		/*do not display the twitter widget*/
+	}
+
+	.wrapper {
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		    -ms-flex-direction: column;
+		        flex-direction: column;
 		height: unset;
 	}
 
-	nav div{
+	#menuButton {
+		display: block;
+	}
+
+	.navMenu{
 		display: none;
+		position: fixed;
+		width: 100%;	
+	}
+
+	.show{
+		display: block;
 	}
 
 	main {
-		width: 100%;
-		position: unset;
-		margin: 0;
+		padding: 0 10px;
+		-webkit-animation: none;
+		        animation: none;
 	}
 }
 
+@media (max-height: 570px) {
+	nav div {
+		display: none;
+		/*do not display the twitter widget*/
+	}
 
+	.wrapper {
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		    -ms-flex-direction: column;
+		        flex-direction: column;
+		height: unset;
+	}
 
+	#menuButton {
+		display: block;
+	}
+
+	.navMenu{
+		display: none;
+		position: fixed;
+		width: 100%;	
+	}
+
+	.show{
+		display: block;
+	}
+
+	main {
+		padding: 0 10px;
+		-webkit-animation: none;
+		        animation: none;
+	}
+}

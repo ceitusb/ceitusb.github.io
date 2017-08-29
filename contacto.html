@@ -3,40 +3,51 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta charset="UTF-8"> 
 <head>
-	<title>CEIT USB</title>
+	<title>Centro de estudiantes de ingeniería en telecomunicaciones - Universidad Simón Bolívar</title>
 	<link rel="stylesheet" type="text/css" href="ceit.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link href='https://fonts.googleapis.com/css?family=Jura' rel='stylesheet'>
+	<link rel="icon" href="favicon.svg">
+	<script type="text/javascript">
+		function toggleMenu() {
+			document.getElementById("navigationMenu").classList.toggle("show");
+			document.getElementById("menuIcon").classList.toggle("fa-chevron-down");
+			document.getElementById("menuIcon").classList.toggle("fa-chevron-up");
+		}
+	</script>
 </head>
 <body>
 	<header>
-		<ul>
-			<li><img src="./parabolica.svg"></li>
-			<li>CEIT</li>
-			<li style="flex-grow: 99"></li>
+		<ul>	
+			<li><a href="./index.html"><img src="./parabolica.svg"></a></li>
+			<li><a href="./index.html">CEIT</a></li>
+			<li style="flex-grow: 99;">
+				<button id="menuButton" onclick="toggleMenu()"><i id="menuIcon" class="fa fa-chevron-down"></i></button>
+			</li>
 			<li><a href="https://www.instagram.com/ceitusb/"><i class="fa fa-instagram"></i></a></li>
 			<li><a href="https://twitter.com/ceit_usb"><i class="fa fa-twitter"></i></a></li>
 		</ul>
 	</header>
-	<div class="content">
-		<nav>
+	<div class="wrapper">
+		<nav class="navMenu" id="navigationMenu">
 			<ul>
-				<li><a href="./index.html">Inicio</a></li>
-				<li><a href="">La Carrera</a></li>
-				<li><a href="./biblio.html">Biblioteca Virtual</a></li>
-				<li><a href="./programas.html">Programas</a></li>
-				<li><a href="http://www.coord-it.profesionales.usb.ve/">Coordinación</a></li>
-				<li class="active"><a href="">Contáctanos</a></li>
+				<li><a href="index.html"><i class="fa fa-home"></i>Inicio</a></li>
+				<!--<li><a href="carrera.html"><i class="fa fa-university"></i>La Carrera</a></li>-->
+				<li><a href="biblio.html"><i class="fa fa-book"></i>Biblioteca Virtual</a></li>
+				<li><a href="programas.html"><i class="fa fa-file-text"></i>Programas</a></li>
+				<li><a href="http://www.coord-it.profesionales.usb.ve/"><i class="fa fa-external-link"></i>Coordinación</a></li>
+				<li class="active"><a href="contacto.html"><i class="fa fa-envelope"></i>Contáctanos</a></li>
 			</ul>
 			<div>
-			<a class="twitter-timeline"  href="https://twitter.com/CEIT_USB" height=270px data-widget-id="402254641754169344">Tweets por el @CEIT_USB.</a>
+			<a class="twitter-timeline"  href="https://twitter.com/CEIT_USB" height=270px data-widget-id="402254641754169344"></a>
 			<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
 			</div>
 		</nav>
 		<main>
-			<p>Si tienes algún proyecto que plantearnos, alguna duda o sugerencias, no dudes en contactarnos a través nuestras redes sociales (<a href="https://twitter.com/ceit_usb">twitter</a> o <a href="https://www.instagram.com/ceitusb/">instagram</a>) o a nuestro e-mail, usando el siguiente form:</p>
+			<h1>¡Contáctanos!</h1>
+			<p>Si tienes algún proyecto que plantearnos, alguna duda o sugerencias, no dudes en contactarnos a través nuestras redes sociales: <a href="https://twitter.com/ceit_usb">twitter</a> e <a href="https://www.instagram.com/ceitusb/">instagram</a>; y a nuestro e-mail, a través de este formulario:</p>
 
-			<form action="https://getsimpleform.com/messages?form_api_token=47ebf62252ba21bf2ce6bbaa7115c3aa" method="post">
+			<form action="https://getsimpleform.com/messages?form_api_token=47ebf62252ba21bf2ce6bbaa7115c3aa" method="post" enctype="multipart/form-data">
 				<!-- the redirect_to is optional, the form will redirect to the referrer on submission -->
 				<input type='hidden' name='redirect_to' value='http://ceitusb.github.io/contacto.html' />
 				<!-- all your input fields here.... -->
@@ -55,7 +66,7 @@
 							<input type="text" name="subject" required />
 						</div>
 					</div>
-					<div class="element" style="width:60%; margin-left: 15px">
+					<div class="element" style="width:60%; margin-left: 15px; display: flex; flex-direction: column;">
 						<div class="group" style="height:100%; display: flex; flex-direction: column;">
 							<label for="message">Mensaje:</label>
 							<textarea name="message" required /></textarea>
@@ -64,10 +75,9 @@
 				</div>
 				<input type='submit' value='Enviar'>
 			</form>
+			<footer>© 2017 Emma Di Battista</footer>
 		</main>
 	</div>
-	<footer style="text-align: center; font-family: monospace; font-size: 1em; color: #999999; margin: 20px 0;">
-		<span>© 2017 Emma Di Battista</span>
-	</footer>
+
 </body>
 </html>

@@ -1,51 +1,61 @@
 <!DOCTYPE html>
 <html>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="viewport" content="height=device-height, initial-scale=1.0">
 <meta charset="UTF-8"> 
 <head>
-	<title>CEIT USB</title>
+	<title>Centro de estudiantes de ingeniería en telecomunicaciones - Universidad Simón Bolívar</title>
 	<link rel="stylesheet" type="text/css" href="ceit.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link href='https://fonts.googleapis.com/css?family=Jura' rel='stylesheet'>
+	<link rel="icon" href="favicon.svg">
+	<script type="text/javascript">
+		function toggleMenu() {
+			document.getElementById("navigationMenu").classList.toggle("show");
+			document.getElementById("menuIcon").classList.toggle("fa-chevron-down");
+			document.getElementById("menuIcon").classList.toggle("fa-chevron-up");
+		}
+	</script>
 </head>
 <body>
 	<header>
-		<ul>
-			<li><img src="./parabolica.svg"></li>
-			<li>CEIT</li>
-			<li style="flex-grow: 99"></li>
+		<ul>	
+			<li><a href="./index.html"><img src="./parabolica.svg"></a></li>
+			<li><a href="./index.html">CEIT</a></li>
+			<li style="flex-grow: 99;">
+				<button id="menuButton" onclick="toggleMenu()"><i id="menuIcon" class="fa fa-chevron-down"></i></button>
+			</li>
 			<li><a href="https://www.instagram.com/ceitusb/"><i class="fa fa-instagram"></i></a></li>
 			<li><a href="https://twitter.com/ceit_usb"><i class="fa fa-twitter"></i></a></li>
 		</ul>
 	</header>
-	<div class="content">
-		<nav>
+	<div class="wrapper">
+		<nav class="navMenu" id="navigationMenu">
 			<ul>
-				<li class="active"><a href="./index.html">Inicio</a></li>
-				<li><a href="">La Carrera</a></li>
-				<li><a href="./biblio.html">Biblioteca Virtual</a></li>
-				<li><a href="./programas.html">Programas</a></li>
-				<li><a href="http://www.coord-it.profesionales.usb.ve/">Coordinación</a></li>
-				<li><a href="contacto.html">Contáctanos</a></li>
+				<li class="active"><a href="index.html"><i class="fa fa-home"></i>Inicio</a></li>
+				<!--<li><a href="carrera.html"><i class="fa fa-university"></i>La Carrera</a></li>-->
+				<li><a href="biblio.html"><i class="fa fa-book"></i>Biblioteca Virtual</a></li>
+				<li><a href="programas.html"><i class="fa fa-file-text"></i>Programas</a></li>
+				<li><a href="http://www.coord-it.profesionales.usb.ve/"><i class="fa fa-external-link"></i>Coordinación</a></li>
+				<li><a href="contacto.html"><i class="fa fa-envelope"></i>Contáctanos</a></li>
 			</ul>
 			<div>
-			<a class="twitter-timeline"  href="https://twitter.com/CEIT_USB" height=270px data-widget-id="402254641754169344">Tweets por el @CEIT_USB.</a>
+			<a class="twitter-timeline"  href="https://twitter.com/CEIT_USB" height=270px data-widget-id="402254641754169344"></a>
 			<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
 			</div>
 		</nav>
 		<main>
-			<p>Bienvenido al sitio web del <b>Centro de estudiantes de ingeniería en telecomunicaciones</b> de la <b>Universidad Simón Bolívar. </b></p>
+			<h1>¡Telecom!</h1>
+			<p>Somos el Centro de Estudiantes de Ingeniería en Telecomunicaciones de la Universidad Simón Bolívar, trabajando por la comunidad telecom, para mejorar la calidad de tu experiencia universitaria.</p>
 			<br>
 			<img src="techos.jpg" alt="USB" width="10000" height="300">
 			<br><br>
-			<p>Aquí encontrarás información sobre <b>la carrera</b>, nuestra biblioteca virtual con una creciente recopilación del <b>material de estudio</b> y los <b>programas</b> de las materias de cada trimestre.</p>
+			<p>Tenemos como misión promover y organizar eventos academicos que puedas aprovechar para tu vida profesional, y también actividades recreativas para tomar un respiro durante y despues del trimestre.</p>
+			<br>		
+			<p>Aquí encontrarás información sobre <a href="carrera.html"></a>la carrera</a>, nuestra biblioteca virtual con una creciente recopilación del <a href="biblio.html">material de estudio</a> y los <a href="programas.html">programas</a> de las materias de cada trimestre.</p>
 			<br>
 			<p>Sigue nuestras cuentas de <a href="https://twitter.com/ceit_usb">twitter</a> e <a href="https://www.instagram.com/ceitusb/">Instagram</a> para estar al tanto de las últimas noticias y actividades del centro.</a></p>
+			<footer>© 2017 Emma Di Battista</footer>
 		</main>
 	</div>
-	<footer style="text-align: center; font-family: monospace; color: #999999; margin: 20px 0 20px 0;">
-		<span>© 2017 Emma Di Battista</span>
-	</footer>
 </body>
 </html>
