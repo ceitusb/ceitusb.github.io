@@ -1,17 +1,12 @@
 /*-------------------
-| palette:					|
-| orangered	#FF4500 |
-| jet black	#000000 |
-| slategray	#1D1F21 |
-| white			#FFFFFF |
-| orange		#FF8C00 |
-| lightgray	#EBEBEA |
+| palette:          |
+| orangered #FF4500 |
+| jet black #000000 |
+| slategray #1D1F21 |
+| white     #FFFFFF |
+| orange    #FF8C00 |
+| lightgray #EBEBEA |
 -------------------*/
-
-@font-face {
-	font-family: basica;
-	src: url(./Basica_V.ttf);
-}
 
 @-webkit-keyframes fadein {
 	from { opacity: 0; }
@@ -63,16 +58,6 @@ body{
 		border-bottom: solid 1px black;
 	}
 
-	header ul li a{
-		font-family: basica;
-		font-size: 40px;
-		font-weight: normal;
-		text-decoration: none;
-		color: black;
-		text-align: center;
-		border: 0;
-	}
-
 	header ul li a img{
 		height: 40px;
 		padding: 4px 10px;
@@ -80,10 +65,12 @@ body{
 	}
 
 	header ul li i:not(#menuIcon){
+		font-size: 40px;
 		color: black;
 		text-decoration: none;
 		padding: 0 10px;
 		vertical-align: middle;
+		text-align: center;
 	}
 
 .wrapper {
@@ -320,7 +307,8 @@ footer {
 	.navMenu{
 		display: none;
 		position: fixed;
-		width: 100%;	
+		width: 100%;
+		z-index: 9999;
 	}
 
 	.show{
@@ -355,7 +343,8 @@ footer {
 	.navMenu{
 		display: none;
 		position: fixed;
-		width: 100%;	
+		width: 100%;
+		z-index: 9999;
 	}
 
 	.show{

@@ -12,8 +12,8 @@
    id="svg3987"
    version="1.1"
    inkscape:version="0.92.1 r15371"
-   width="339.59628"
-   height="421.79016"
+   width="692.41864"
+   height="134.438"
    sodipodi:docname="parabolica.svg"
    inkscape:export-filename="/home/emma/Documents/HTML+CSS+JS/ceit/parabolica_ceit.png"
    inkscape:export-xdpi="200"
@@ -50,40 +50,51 @@
      fit-margin-right="0"
      fit-margin-bottom="0"
      inkscape:zoom="1.066308"
-     inkscape:cx="252.48659"
+     inkscape:cx="329.00311"
      inkscape:cy="198.87042"
      inkscape:window-x="0"
      inkscape:window-y="27"
      inkscape:window-maximized="1"
      inkscape:current-layer="svg3987" />
   <path
-     style="fill:#ff4500;fill-opacity:1;stroke:none;stroke-width:1.06666672px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-     d="m 135.23922,303.82236 -10.2565,37.48927 H 83.603067 l -13.793227,79.57626 269.14462,0.35368 -15.20789,-80.63729 H 287.3183 L 255.8414,258.5523 c 0,0 -22.98859,23.34238 -56.23382,36.78192 -23.55594,9.52259 -54.11189,10.2565 -64.36836,8.48814 z"
+     style="fill:#ff4500;fill-opacity:1;stroke:none;stroke-width:0.34085816px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+     d="m 43.041239,96.91616 -3.277511,11.97986 H 26.540673 l -4.407688,25.42896 86.006375,0.11302 -4.85975,-25.76801 H 91.6388 L 81.580214,82.449911 c 0,0 -7.346108,7.459162 -17.969775,11.753829 -7.527406,3.04298 -17.291698,3.2775 -20.5692,2.71242 z"
      id="path4031"
      inkscape:connector-curvature="0"
      sodipodi:nodetypes="ccccccccsc" />
   <path
-     style="fill:#ff4500;fill-opacity:1;stroke:none;stroke-width:1.06666672px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-     d="m 96.042272,287.52829 c 0,0 147.985798,-3.46563 209.995558,-143.93422 C 250.46541,353.98315 96.042272,287.52829 96.042272,287.52829 Z"
+     style="fill:#ff4500;fill-opacity:1;stroke:none;stroke-width:0.34085816px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+     d="m 30.515678,91.70932 c 0,0 47.289531,-1.10745 67.105026,-45.994829 C 79.862289,112.94526 30.515678,91.70932 30.515678,91.70932 Z"
      id="path4037"
      inkscape:connector-curvature="0"
      sodipodi:nodetypes="ccc" />
   <path
-     style="fill:#ff4500;fill-opacity:1;stroke:none;stroke-width:1.06666672px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-     d="M 71.849115,67.816278 C 64.631312,74.216513 -27.571408,153.21126 9.1602502,235.26324 46.773189,319.28386 186.51628,269.11305 242.04822,220.00202 296.79414,171.58612 364.06156,48.57183 266.51233,6.7982834 231.90102,-8.0233273 149.70657,2.3429981 94.117253,50.025537"
+     style="fill:#ff4500;fill-opacity:1;stroke:none;stroke-width:0.34085816px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+     d="M 22.784644,21.499358 C 20.478163,23.54458 -8.9856338,48.787707 2.752134,75.007787 14.771519,101.85695 59.427056,85.82465 77.172541,70.130992 94.66684,54.659473 116.16245,15.349706 84.990156,2.0007779 73.929956,-2.7355294 47.664346,0.5770699 29.900529,15.814246"
      id="path4049"
      inkscape:connector-curvature="0"
      sodipodi:nodetypes="csssc" />
   <path
-     style="fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:3.94666672;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-     d="m 89.271154,81.421194 72.523616,90.433746 c 0,0 11.50378,5.01019 11.50378,-7.26475 L 102.77554,69.14625"
+     style="fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1.26117527;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+     d="m 28.351936,25.846869 23.175249,28.898505 c 0,0 3.676086,1.601026 3.676086,-2.321483 L 32.667323,21.92435"
      id="path4577"
      inkscape:connector-curvature="0" />
   <ellipse
-     style="fill:#ffffff;fill-opacity:1;stroke:#ff4500;stroke-width:3.94666672;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+     style="fill:#ffffff;fill-opacity:1;stroke:#ff4500;stroke-width:1.26117527;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
      id="path4051"
-     cx="87.403664"
-     cy="64.739868"
-     rx="16.188732"
-     ry="16.452574" />
+     cx="27.755173"
+     cy="20.516287"
+     rx="5.1731825"
+     ry="5.2574944" />
+  <text
+     xml:space="preserve"
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:53.33353043px;line-height:1.25;font-family:'Basica v.2012';-inkscape-font-specification:'Basica v.2012, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1.0000037"
+     x="143.79163"
+     y="134.438"
+     id="text4559"><tspan
+       sodipodi:role="line"
+       id="tspan4557"
+       x="143.79163"
+       y="134.438"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:192.00071716px;font-family:'Basica v.2012';-inkscape-font-specification:'Basica v.2012, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;stroke-width:1.0000037">CEIT</tspan></text>
 </svg>
