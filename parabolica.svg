@@ -26,7 +26,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
+        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -50,8 +50,8 @@
      fit-margin-right="0"
      fit-margin-bottom="0"
      inkscape:zoom="1.066308"
-     inkscape:cx="329.00311"
-     inkscape:cy="198.87042"
+     inkscape:cx="379.43441"
+     inkscape:cy="-62.89567"
      inkscape:window-x="0"
      inkscape:window-y="27"
      inkscape:window-maximized="1"
@@ -86,15 +86,25 @@
      cy="20.516287"
      rx="5.1731825"
      ry="5.2574944" />
-  <text
-     xml:space="preserve"
+  <g
+     aria-label="CEIT"
      style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:53.33353043px;line-height:1.25;font-family:'Basica v.2012';-inkscape-font-specification:'Basica v.2012, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1.0000037"
-     x="143.79163"
-     y="134.438"
-     id="text4559"><tspan
-       sodipodi:role="line"
-       id="tspan4557"
-       x="143.79163"
-       y="134.438"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:192.00071716px;font-family:'Basica v.2012';-inkscape-font-specification:'Basica v.2012, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;stroke-width:1.0000037">CEIT</tspan></text>
+     id="text4559">
+    <path
+       d="M 143.79163,0.56250349 Q 143.88538,1.385808e-6 144.44788,1.385808e-6 H 302.60472 Q 303.16722,0.09375174 303.16722,0.56250349 V 36.093886 q 0,0.562502 -0.5625,0.562502 H 184.47928 v 61.125229 h 118.12544 q 0.5625,0.09375 0.5625,0.562502 V 133.8755 q 0,0.5625 -0.5625,0.5625 H 144.44788 q -0.65625,0 -0.65625,-0.5625 z"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:192.00071716px;font-family:'Basica v.2012';-inkscape-font-specification:'Basica v.2012, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;stroke-width:1.0000037"
+       id="path4525" />
+    <path
+       d="M 312.54225,0.56250349 Q 312.636,1.385808e-6 313.1985,1.385808e-6 H 471.35534 Q 471.91785,0.09375174 471.91785,0.56250349 V 36.093886 q 0,0.562502 -0.56251,0.562502 H 353.2299 v 12.375047 h 118.12544 q 0.56251,0.09375 0.56251,0.562502 v 35.531382 q 0,0.562502 -0.56251,0.562502 H 353.2299 v 12.093796 h 118.12544 q 0.56251,0.09375 0.56251,0.562502 V 133.8755 q 0,0.5625 -0.56251,0.5625 H 313.1985 q -0.65625,0 -0.65625,-0.5625 z"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:192.00071716px;font-family:'Basica v.2012';-inkscape-font-specification:'Basica v.2012, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;stroke-width:1.0000037"
+       id="path4527" />
+    <path
+       d="M 522.82428,1.385808e-6 Q 523.48053,0.09375174 523.48053,0.56250349 V 133.8755 q 0,0.5625 -0.65625,0.5625 h -40.87515 q -0.65625,0 -0.65625,-0.5625 V 0.56250349 Q 481.38663,1.385808e-6 481.94913,1.385808e-6 Z"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:192.00071716px;font-family:'Basica v.2012';-inkscape-font-specification:'Basica v.2012, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;stroke-width:1.0000037"
+       id="path4529" />
+    <path
+       d="m 591.16828,37.593892 h -57.46897 q -0.65625,0 -0.65625,-0.562502 V 0.56250349 Q 533.13681,1.385808e-6 533.69931,1.385808e-6 H 691.85615 Q 692.41866,0.09375174 692.41866,0.56250349 V 37.03139 q 0,0.562502 -0.56251,0.562502 H 634.01219 V 133.8755 q 0,0.5625 -0.65626,0.5625 h -41.5314 q -0.65625,0 -0.65625,-0.5625 z"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:192.00071716px;font-family:'Basica v.2012';-inkscape-font-specification:'Basica v.2012, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;stroke-width:1.0000037"
+       id="path4531" />
+  </g>
 </svg>
